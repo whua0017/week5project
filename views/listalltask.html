@@ -1,0 +1,39 @@
+<html>
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <a href ="/">Home</a> 
+        <a href ="/newtask">Add new Task</a> 
+    </h1>
+
+    </br>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Due Data</td>
+                <td>Description</td>
+            </tr>
+            <% for ( let i =0; i< task.length;i++){ %>
+                <tr>
+                    <td>
+                        <%= task[i].taskname %>
+                    </td>
+                    <td>
+                        <%= task[i].taskdue %>
+                    </td>
+                    <td>
+                        <%= task[i].taskdecs %>
+                    </td>
+
+                </tr>
+            <% }%>
+        
+   
+</body>
+</html>
